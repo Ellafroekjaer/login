@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Grow | Styleguide</title>
+
+    <script type="text/javascript">
+        // PASSWORD PROTECTION SCRIPT		
+        function TheLogin() {
+            var navn = 'Grow';
+            var password = 'Grow2021';
+            if (this.document.login.pass.value == password && this.document.login.name.value == navn) {
+                //window.alert("TILLYKKE!!! Kodeord og navn er korrekt og du logges ind :-)");
+                top.location.href = "somestrategi.html";
+            }
+            else {
+                if (this.document.login.pass.value != password || this.document.login.name.value != navn)
+                    window.alert("Kodeord eller password er forkert - prøv venligst igen");
+                /*else if (this.document.login.pass.value != password)
+                    window.alert("Navn er kendt men Kodeord er forkert - prøv veligst igen :-)");
+                else if (this.document.login.name.value != navn)
+                    window.alert("Navn er ukendt men kodeordet er rigtigt - prøv veligst igen :-)");*/
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Login form + bannerbilleder -->
+    <div class="top_banner"></div>
+    <main>
+        <div class="name_password">
+            <label>NAME</label><br>
+            <form class="margin_form" name="login">
+                <input id="input_box" type="text" name="name" size="17"
+                    onkeydown="if(event.keyCode==13) event.keyCode=9;"><br>
+
+                <br>PASSWORD<br>
+                <input id="input_box" type="password" name="pass" size="17"
+                    onkeydown="if(event.keyCode==13) event.keyCode=9;">
+                <br><br>
+
+                <input id="btn_login" type="button" value="Login" onclick="javascript:TheLogin(this.form)">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/bund_logo.png" class="bund_banner" alt="Grow banner med blade og GROW tekst">
+    </footer>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
