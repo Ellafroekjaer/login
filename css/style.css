@@ -172,6 +172,39 @@ default-button {}
     margin-bottom: 50px;
 }
 
+/* -------- Navigation åben -------- */
+#nav_bars {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #3b5e62;
+    opacity: 0.8;
+}
+
+#nav_bars a {
+    display: table-cell;
+    text-align: center;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+    font-family: Lucida-Regular;
+}
+
+.someforst {
+    border-left: 3px solid white;
+}
+
+.vidg {
+    font-size: 20px !important;
+}
+
+#nav_bars a:hover {
+    background-color: #627e81;
+}
 /* -------- Titel + tekst -------- */
 #somecontent {
     background-color: #3b5e62;
@@ -190,16 +223,58 @@ default-button {}
     gap: 50px;
     flex-direction: row;
     transform: rotate(180deg);
-
 }
 
+
+/* -------- SoMe tekst -------- */
+.sometitel {
+    font-family: Lucida-Demibold;
+    text-align: center;
+    color: #83afb4;
+    font-size: 40px;
+}
+
+.somepcontainer {
+    background-color: #3b5e62;
+    opacity: 1;
+    width: 800px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    color: white;
+    font-family: Lucida-Regular;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/top_banner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.spgsm {
+    font-family: Lucida-Bold;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.pcontainer, .spgsm, .pcontainer_top {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pcontainer_top {
+    padding-bottom: 50px;
+    line-height: 20px;
+}
+
+.pcontainer {
+    padding-bottom: 15px;
+}
 /* -------- SoMe cards -------- */
 .tjekd {
     max-width: 50%;
     max-height: 50%;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
 }
 
@@ -214,11 +289,11 @@ default-button {}
 .container {
     position: relative;
     max-width: 1100px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
 }
 
 .container .card {
@@ -247,10 +322,8 @@ default-button {}
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 .somestr {
     width: 260px;
-    /* width of container */
     height: 260px;
     background-color: white;
     object-fit: cover;
@@ -280,13 +353,38 @@ default-button {}
     transition-delay: 0.3s;
 }
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
+.content h2 {
+    font-family: Lucida-Demibold;
+    margin-top: -15px;
+}
+
+.content p {
+    font-family: Lucida-Regular;
+    font-size: 15px;
+}
+
+.content ol {
+    list-style-type: disc;
+    text-align: left;
+    font-family: Lucida-Regular;
+}
+
+.tykskrift {
+    font-weight: bolder;
+}
+
+.somepcontainer h4 {
+    font-family: Lucida-Bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#myImg, #myImg1, #myImg2 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     width: 260px;
-    /* width of container */
     height: 260px;
     background-color: white;
     object-fit: cover;
@@ -294,44 +392,32 @@ default-button {}
     z-index: 1000;
 }
 
-#myImg:hover {
+#myImg:hover, #myImg1:hover, #myImg2:hover {
     opacity: 0.7;
 }
 
-/* The Modal (background) */
-.modal {
+.modal, .modal1, .modal2 {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
     z-index: 100;
 }
 
-/* Modal Content (Image) */
-.modal-content {
+.modal-content, .modal-content1, .modal-content2 {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-    background-image: url(../img/Nanna_final_linkedin.png);
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+#caption, #caption1, #caption2 {
     margin: auto;
     display: block;
     width: 80%;
@@ -343,9 +429,8 @@ default-button {}
     z-index: 1000;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content,
-#caption {
+.modal-content, .modalcontent1,
+#caption, #caption1, .modal-content2, #caption2 {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -360,8 +445,7 @@ default-button {}
     }
 }
 
-/* The Close Button */
-.close {
+.close, .close1, .close2 {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -371,16 +455,18 @@ default-button {}
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close1:hover,
+.close:focus, .close1:focus,
+.close2:hover, .close2:focus{
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-    .modal-content {
+    .modal-content, .modal-content1, .modal-content2 {
         width: 100%;
     }
 }
+
+/* -------- Visual identity -------- */
