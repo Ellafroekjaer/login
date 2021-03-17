@@ -277,6 +277,67 @@ html {
     font-family: Lucida-Demibold;
 }
 
+#lancering {
+    background-color: #3b5e62;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#lancering h3 {
+    text-align: center;
+}
+
+.lanceringimg {
+    max-width: 30%;
+    padding: 30px;
+}
+
+.lanceringfb {
+    padding-bottom: 30px;
+}
+
+.lanceringwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lanceringcredit {
+    font-family: Lucida-Regular;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px;
+}
+
+#lancering p {
+    font-family: Lucida-Regular;
+    color: white;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 80px;
+}
+
+#lancering span {
+    text-decoration: underline;
+    font-family: Lucida-Demibold;
+}
+
+
+
+
 /* -------- Tabel -------- */
 .tg {
     border-collapse: collapse;
@@ -290,6 +351,13 @@ html {
     margin-right: 30px;
 }
 
+.tg-0pky {
+    text-align: left;
+}
+
+.fylde {
+    height: 30px;
+}
 
 .tg td {
     border-color: white;
@@ -303,6 +371,10 @@ html {
     word-break: normal;
 }
 
+td span {
+    text-decoration: underline;
+    font-family: Lucida-Demibold;
+}
 
 .tg th {
     border-color: white;
@@ -361,7 +433,6 @@ table ol {
     padding-top: 20px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    
 }
 
 .brandvoicewrapper p {
@@ -407,6 +478,24 @@ table ol {
     background-repeat: no-repeat;
 }
 
+.somepcontainer ol {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+
+.somepcontainer span {
+    text-decoration: underline;
+    font-family: Lucida-Demibold;
+}
+
+.some_ikon {
+    width: 50px;
+    display: block;
+    margin: auto;
+}
+
 .helcontainer {
     width: 100%;
 }
@@ -430,10 +519,19 @@ table ol {
     line-height: 20px;
 }
 
+.pcontainer_ol {
+    line-height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .pcontainer {
     padding-bottom: 15px;
 }
 
+#pcontainerbot {
+    padding-bottom: 40px;
+}
 /* -------- SoMe cards -------- */
 .tjekd {
     max-width: 50%;
@@ -732,7 +830,7 @@ table ol {
 .smartgoals_bund {
     display: block;
     margin: auto;
-    height: 250px;
+    height: 280px;
     width: 1160px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
     background-color: #3b5e62;
@@ -757,12 +855,13 @@ table ol {
     text-align: left;
     margin-left: 300px;
     margin-right: 300px;
+    line-height: 20px;
 }
 
 .smartgoals_container {
     position: relative;
     width: 360px;
-    height: 500px;
+    height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
     background-color: #3b5e62;
     background-size: cover;
@@ -784,6 +883,7 @@ table ol {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 20px;
 }
 
 .fedtekst {
@@ -945,6 +1045,57 @@ table ol {
     }
 }
 
+/* -------- Kampagnekalender -------- */
+.kampagne_wrapper {
+    background-color: #3b5e62;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
 
-
+.kampagne_wrapper h3 {
+    font-family: Lucida-Bold;
+    padding-top: 20px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.kampagnekalender {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
 /* -------- Visual identity -------- */
+
+/* -------- Footer button -------- */
+#btn_top {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+    background-color: #83afb4;
+    border-radius: 100px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'inter';
+    color: white;
+    transition-duration: 0.5s;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 70px;
+    margin-top: 10px;
+    font-family: Lucida-Demibold;
+}
+
+#btn_top:hover {
+    background-color: #588c92;
+}
+
+footer button a {
+    text-decoration: none !important;
+}
