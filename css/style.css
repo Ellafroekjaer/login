@@ -24,6 +24,11 @@ body {
     src: url('../fonts/lucidasansdemibold.ttf');
 }
 
+@font-face {
+    font-family: 'Lucida-Italic';
+    src: url('../fonts/LucidaSansItalic.ttf');
+}
+
 /* -------- Scrolling-------- */
 html {
     scroll-behavior: smooth;
@@ -41,7 +46,7 @@ html {
 }
 
 /* -------- Login forms + btn -------- */
-#input_box {
+.input_box {
     width: 200px;
     font-size: 1.2rem;
 }
@@ -190,7 +195,7 @@ html {
     border-right: 3px solid white;
     margin-right: 30px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     transition: 0.3s;
     font-family: Lucida-Regular;
@@ -201,7 +206,7 @@ html {
 }
 
 .vidg {
-    font-size: 20px !important;
+    font-size: 19px !important;
 }
 
 #nav_bars a:hover {
@@ -277,67 +282,6 @@ html {
     font-family: Lucida-Demibold;
 }
 
-#lancering {
-    background-color: #3b5e62;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-#lancering h3 {
-    text-align: center;
-}
-
-.lanceringimg {
-    max-width: 30%;
-    padding: 30px;
-}
-
-.lanceringfb {
-    padding-bottom: 30px;
-}
-
-.lanceringwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.lanceringcredit {
-    font-family: Lucida-Regular;
-    color: white;
-    font-size: 25px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 400px;
-}
-
-#lancering p {
-    font-family: Lucida-Regular;
-    color: white;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 30px;
-    text-align: left;
-    margin-left: 90px;
-    margin-right: 80px;
-}
-
-#lancering span {
-    text-decoration: underline;
-    font-family: Lucida-Demibold;
-}
-
-
-
-
 /* -------- Tabel -------- */
 .tg {
     border-collapse: collapse;
@@ -394,19 +338,16 @@ td span {
     background-repeat: no-repeat;
 }
 
-#head_table {
-    font-family: Lucida-Demibold;
+.head_table {
+    font-family: Lucida-Demibold !important;
+    text-align: left;
+    vertical-align: top;
 }
 
 .tg .tg-1wig {
     font-weight: bold;
     text-align: left;
-    vertical-align: top
-}
-
-.tg .tg-0lax {
-    text-align: left;
-    vertical-align: top
+    vertical-align: top;
 }
 
 table ol {
@@ -454,6 +395,19 @@ table ol {
     padding-bottom: 30px;
 }
 
+.brandvoicewrapper ol {
+    list-style-type: disc;
+    display: block;
+    margin: auto;
+    text-align: left;
+    width: 40%;
+    padding-top: 20px;
+    font-family: Lucida-Regular;
+    color: white;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
 /* -------- SoMe tekst -------- */
 .sometitel {
     font-family: Lucida-Demibold;
@@ -480,6 +434,7 @@ table ol {
 
 .somepcontainer ol {
     list-style-type: disc;
+    line-height: 20px;
     text-align: left;
     margin-left: 20px;
     padding-bottom: 30px;
@@ -532,6 +487,7 @@ table ol {
 #pcontainerbot {
     padding-bottom: 40px;
 }
+
 /* -------- SoMe cards -------- */
 .tjekd {
     max-width: 50%;
@@ -780,6 +736,7 @@ table ol {
     padding-top: 40px;
     padding-right: 10px;
     padding-left: 10px;
+    border: none;
 }
 
 .iframepcontainer {
@@ -891,8 +848,6 @@ table ol {
     text-decoration: underline;
 }
 
-
-
 /* -------- Slideshow -------- */
 .slideshow-container {
     max-width: 40%;
@@ -976,7 +931,6 @@ table ol {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 
 .text {
@@ -1064,13 +1018,226 @@ table ol {
     color: white;
     text-align: center;
 }
+
 .kampagnekalender {
     width: 80%;
     display: block;
     margin: auto;
     padding: 50px;
 }
+
 /* -------- Visual identity -------- */
+.designGuide {
+    background-color: #3b5e62;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.farver_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 50px;
+    font-family: Lucida-Regular;
+}
+
+.farve1,
+.farve2,
+.farve3,
+.farve4 {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.farve1 {
+    background-color: #000000;
+    color: white;
+}
+
+.farve2 {
+    background-color: #ffffff;
+}
+
+.farve3 {
+    background-color: #83afb4;
+    color: white;
+}
+
+.farve4 {
+    background-color: #2c5e4f;
+    color: white;
+}
+
+.designGuide span {
+    text-decoration: underline;
+    font-family: Lucida-Demibold;
+}
+
+.sansbold {
+    text-decoration: none !important;
+    font-family: Lucida-Bold !important;
+}
+
+.demibold {
+    text-decoration: none !important;
+}
+
+.sansitalic {
+    font-family: Lucida-Italic !important;
+    text-decoration: none !important;
+}
+
+.billeder_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#videntity {
+    width: 90%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+#hexcodes {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#typografi {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#eaaalogo {
+    width: 50%;
+    height: 50%;
+    border-radius: 100px;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footerlogo {
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#growlogo {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.designGuide h3 {
+    font-family: Lucida-Bold;
+    padding: 20px 0px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.designGuide p {
+    padding-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.designGuide ol {
+    list-style-type: disc;
+    text-align: left;
+    padding-bottom: 30px;
+    font-family: Lucida-Regular;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 20px;
+}
+
+/* -------- Lancering -------- */
+#lancering {
+    background-color: #3b5e62;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/top_banner.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#lancering h3 {
+    text-align: center;
+}
+
+.lanceringimg {
+    max-width: 30%;
+    padding: 30px;
+}
+
+.lanceringfb {
+    padding-bottom: 30px;
+}
+
+.lanceringwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lanceringcredit {
+    font-family: Lucida-Regular;
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px;
+}
+
+#lancering p {
+    font-family: Lucida-Regular;
+    color: white;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 90px;
+    margin-right: 80px;
+}
+
+#lancering span {
+    text-decoration: underline;
+    font-family: Lucida-Demibold;
+}
+
 
 /* -------- Footer button -------- */
 #btn_top {

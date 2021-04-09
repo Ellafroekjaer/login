@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,17 @@
 </head>
 
 <body>
-    <!-- Login form + bannerbilleder -->
+    <!-- Topbanner billede -->
     <div class="top_banner"></div>
     <main>
+       <!-- Login form -->
         <div class="name_password">
             <label>BRUGERNAVN</label><br>
             <form class="margin_form" name="login">
-                <input id="input_box" type="text" name="name" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;"><br>
+                <input class="input_box" type="text" name="name" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;"><br>
 
                 <br><label>KODEORD</label><br>
-                <input id="input_box" type="password" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;">
+                <input class="input_box" type="password" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;">
                 <br><br>
 
                 <input id="btn_login" type="button" value="Log ind" onclick="javascript:TheLogin(this.form)">
@@ -28,8 +29,9 @@
         </div>
     </main>
 
+   <!-- Bundbanner billede -->
     <footer>
         <img src="img/bund_logo.png" class="bund_banner" alt="Grow banner med blade og GROW tekst">
     </footer>
-        <script type="text/javascript" src="java/java.js"></script>
+    <script type="text/javascript" src="java/java.js"></script>
 </body></html>
